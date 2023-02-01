@@ -1,5 +1,6 @@
 // Note to self: global variables are 0 by default
 // if not declared globally, remember to initialize ints
+// Beware of edge case when query value is bigger then vector sum
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -11,7 +12,6 @@ int main() {
     int m, n;
     cin >> m >> n;
 
-    
     // m is the num of clusters, n is num of queries
     for (int i = 0; i < m; i++) {
         int x; cin >> x;
