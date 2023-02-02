@@ -1,18 +1,20 @@
 // The key is to realize trailing zeros result from factor of 10, 
 // so we want in the factorization of the final number to have as much
 // paris of 2 * 5 as possible
+// Note to self: n, m are of O(1e9), when multiplied with others might overflow, so use ll
 
 #include <bits/stdc++.h>
 using namespace std;
 
+typedef long long ll;
 
 int main() {
   int t; cin >> t;
   while (t--) {
-    int n, m; cin >> n >> m;
-    int original_n = n;
+    ll n, m; cin >> n >> m;
+    ll original_n = n;
     
-    int cnt2 = 0, cnt5 = 0, k = 1;
+    ll cnt2 = 0, cnt5 = 0, k = 1;
     
     while (n > 0 && n%2 == 0) {
       n /= 2;
