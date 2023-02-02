@@ -20,7 +20,7 @@ int main() {
     }
     while (n > 0 && n%5 == 0) {
       n /= 5;
-      cnt2++;
+      cnt5++;
     }
     while (cnt2 < cnt5 && 2*k <= m) {
       cnt2++;
@@ -33,9 +33,14 @@ int main() {
     while (10*k <= m) {
       k *= 10;
     }
-    // add missing part
+    // note that now we can't have more trailing 0s, but we must find the largest such number
+    // so, multiples of itself, the total number of multiples is m / k
+    // original_n should be multiplied with m / k
     if (k == 1) cout << original_n * m << endl;
-    else cout << original_n * k << endl;
+    else {
+        k = m / k * k;
+        cout << original_n * k << endl;
+    }
   }
 
   return 0;
