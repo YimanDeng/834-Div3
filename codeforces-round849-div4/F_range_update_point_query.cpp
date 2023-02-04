@@ -1,10 +1,11 @@
 /*
 Note to self: I had to read the tutorial for this one
-key is that single digit numbers don't change under query 1
-all numbers from 1:1e9 will be single digit after 3 iter ot query 1
+Key is that single digit numbers don't change under query 1
+All numbers from 1:1e9 will be single digit after 3 iter ot query 1
 e.g., max sum of digit f(999,999,999) = 81; 
 from 1 to 81, max sum of digit f(79) = 16;
 from 1 to 16, max sum of digit f(9) = 9;
+Another key is to use a set to store the active indices
 */
 #include <bits/stdc++.h>
 using namespace std;
