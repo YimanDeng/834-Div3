@@ -34,7 +34,7 @@ int main() {
 }
 
 /* 
-Closest to the left/right
+Closest to the left (similarly for closest to right)
 This is the implementation for closest to l
 Idea: maintain invariant l <= q and r > q;
 */

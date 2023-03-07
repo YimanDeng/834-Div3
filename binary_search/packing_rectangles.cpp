@@ -1,6 +1,7 @@
 /*
-input: rectangle of width w and length h. n of them
+example from codeforces
 
+input: rectangle of width w and length h. n of them
 output: minimum side length of square such that the all rectangles fit
 */
 #include <iostream>
